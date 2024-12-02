@@ -366,4 +366,4 @@ REST Client Request Interceptor
 
 ## Spring Session
 
-(Spring Session)[https://spring.io/projects/spring-session]
+[Spring Session](https://spring.io/projects/spring-session)
