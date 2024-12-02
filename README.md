@@ -209,6 +209,7 @@ GET http://localhost:8082/actuator/caches
 ```http
 ###
 GET http://localhost:8082/actuator/caches/employee
+```
 
 ```http
 ###
@@ -217,7 +218,7 @@ GET http://localhost:8082/actuator/metrics
 
 ```http
 ###
-GET http://localhost:8082/actuator/metrics
+GET http://localhost:8082/actuator/metrics/cache.gets
 ```
 
 ```http
