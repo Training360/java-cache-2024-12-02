@@ -203,26 +203,26 @@ logging:
 
 ```http
 ###
-GET http://localhost:8080/actuator/caches
+GET http://localhost:8082/actuator/caches
 ```
 
 ```http
 ###
-GET http://localhost:8080/actuator/caches/employee
+GET http://localhost:8082/actuator/caches/employee
 
 ```http
 ###
-GET http://localhost:8080/actuator/metrics
+GET http://localhost:8082/actuator/metrics
 ```
 
 ```http
 ###
-GET http://localhost:8080/actuator/metrics
+GET http://localhost:8082/actuator/metrics
 ```
 
 ```http
 ###
-GET http://localhost:8080/actuator/metrics/cache.gets?tag=name:employee&tag=result:hit
+GET http://localhost:8082/actuator/metrics/cache.gets?tag=name:employees-frontend&tag=result:hit
 ```
 
 ## HTTP cache
