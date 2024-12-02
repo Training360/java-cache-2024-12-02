@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    employees: DEBUG
+
+employees:
+  backend-url: http://localhost:8080

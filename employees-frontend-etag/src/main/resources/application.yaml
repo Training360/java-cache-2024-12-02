@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    employees: DEBUG
+    org.apache.hc.client5.http: DEBUG
+
+employees:
+  backend-url: http://localhost:8080
+
+spring:
+  cache:
+    cache-names: employees-frontend
+    redis:
+      enable-statistics: true

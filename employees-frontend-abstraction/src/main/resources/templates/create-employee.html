@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Employees</title>
+</head>
+<body>
+
+<h1>Create employee</h1>
+
+<form th:action="@{/create-employee}" th:object="${command}" method="post">
+        <label for="name-input">Name</label>
+        <input th:field="*{name}" id="name-input" />
+    <button type="submit">Create employee</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/employees
+    username: employees
+    password: employees
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        cache:
+          use_query_cache: true
+          use_second_level_cache: true
+          factory_class: org.redisson.hibernate.RedissonRegionFactory
+          redisson:
+            fallback: true
+            config: redisson.yaml
+
+  liquibase:
+    change-log: classpath:db/db-changelog.yaml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    employees: DEBUG
+    org.hibernate.SQL: TRACE
